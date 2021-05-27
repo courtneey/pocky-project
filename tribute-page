@@ -1,0 +1,156 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;800&display=swap');
+
+    body {
+    }
+
+    #body-div {
+      background-color: rgb(242, 240, 240);
+    }
+
+    #main {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 50px 30px 30px 30px;
+    }
+
+    #title {
+        color: rgb(50, 4, 4);
+        font-family: "Raleway", sans-serif;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        top: 30px;
+    }
+
+    h2 {
+        color: rgb(50, 4, 4);
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    h3 {
+        color: rgb(50, 4, 4);
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    #img-div {
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(50, 4, 4);
+    }
+
+    #image {
+        max-width: 50%;
+        margin: auto;
+        display: block;
+        padding: 30px 0px 0px 0px;
+    }
+
+    #img-caption {
+        color: rgb(87, 87, 87);
+        font-family: sans-serif;
+        font-size: 18px;
+        text-align: center;
+        font-weight: lighter;
+        margin: 20px;
+        font-style: italic;
+
+    }
+
+    #tribute-info {
+        background-color: rgb(246, 238, 238);
+        width: 90%;
+        margin: 50px auto 50px auto;
+        padding-bottom: 30px;
+    }
+
+    #facts-div {
+        width: 50%;
+        margin: auto;
+    }
+
+    #fun-facts {
+        color: rgb(50, 4, 4);
+        font-family: sans-serif;
+        font-size: 16px;
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    li {
+        line-height: 20px;
+    }
+
+    #tribute-link {
+        color: rgb(50, 4, 4)
+    }
+</style>
+
+<!DOCTYPE html>
+
+<html>
+
+<body id="body-div">
+
+    <div id="main">
+
+        <h1 id="title">
+            Pocky
+        </h1>
+        <h2>
+            Sharing happiness since 1966
+        </h2>
+
+        <div id="img-div">
+            <img src="https://cdn.shopify.com/s/files/1/0414/0681/products/GLICO-Pocky-Sakura-Matcha-Chocolate-Bags-Inside-Limited-Edition-Made-in-Japan8_1946b0bc-aa21-4cdc-823b-942bc8f14ae2_800x.jpg?v=1582618421" id="image" />
+            <p id="img-caption">
+                "Sakura Matcha Pocky is one of Japan's most popular seasonal releases ... This pocky always brings to
+                mind the image of enjoying a cup of matcha beneath the blossoming sakura trees."
+                (source: <a href="https://www.bokksu.com/products/pocky-sakura-matcha" id="tribute-link"
+                    target="_blank">bokksu.com</a>)
+            </p>
+        </div>
+
+        <div id="tribute-info">
+            <div id="facts-div">
+                <h3>
+                    Here is a list of fun facts about Pocky:
+                </h3>
+                <p>
+                <ul id="fun-facts">
+                    <li>Pocky was launched in 1966, and at the time each stick was hand dipped in chocolate.</li><br />
+                    <li>The name "Pocky" was inspired by the sound made when eating the snack.</li><br />
+                    <li>In Malaysia, Pocky used to be called "Rocky" for over 40 years.</li><br />
+                    <li>Pocky is known as "Mikado" in many European countries.</li><br />
+                    <li>Pocky is sold in over 50 flavors total, including: chocolate, strawberry, almond, banana,
+                        caramel,
+                        melon, and many more!</li><br />
+                    <li>"My Calorie Pocky" is a lighter version of the snack which contains one-fourth the calories of
+                        regular Pocky.</li><br />
+                    <li>A savory snack which is related to Pocky is "Pretz," which is an unglazed biscuit featuring
+                        flavors such as tomato and salad.</li><br />
+                    <li>November 11th is known as "Pocky & Pretz Day" in Japan. (The repeated number 1 in the numerical
+                        date represents the shape of Pocky.)</li><br />
+                </ul>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
