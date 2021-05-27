@@ -1,0 +1,241 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+    body {
+        background-color: white;
+    }
+
+    #title {
+        text-align: center;
+        color: rgb(123, 83, 42);
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        padding: 30px 0px 0px 0px;
+        margin-bottom: -10px;
+    }
+
+    #form-box {
+        width: 700px;
+        height: auto;
+        background-color: rgb(226, 238, 234);
+        margin: 0px auto 20px auto;
+        border-radius: 5px;
+    }
+
+    #main-image {
+        display: block;
+        margin: 20px auto 0px auto;
+        width: 700px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    #description {
+        color: rgb(75, 75, 75);
+        font-size: 18px;
+        font-family: "Nunito Sans", sans-serif;
+        font-style: italic;
+        text-align: center;
+        padding: 0px 0px 30px 0px;
+    }
+
+    #survey-form {
+        padding: 50px;
+        font-size: 18px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        color: rgb(25, 25, 25);
+    }
+
+    .text-fields {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border-width: 0px;
+        font-size: 16px;
+        font-family: "Nunito Sans", sans-serif;
+        color: rgb(130, 130, 130);
+        padding-left: 10px;
+        margin: 5px 0px 30px 0px;
+    }
+
+    .comment-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: 150px;
+        max-height: 150px;
+        min-height: 150px;
+        border-radius: 5px;
+        border-width: 0px;
+        font-size: 16px;
+        font-family: "Nunito Sans", sans-serif;
+        color: rgb(130, 130, 130);
+        padding-left: 20px;
+        padding-top: 10px;
+        margin: 5px 0px 30px 0px;
+    }
+
+    #submit {
+        width: 100%;
+        height: 40px;
+        background-color: rgb(123, 83, 42);
+        font-size: 18px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 5px;
+        border-width: 0px;
+    }
+
+    #submit:active {
+        background-color: rgb(85, 58, 31)
+    }
+
+    @media screen and (max-width: 1000px) {
+        #form-box {
+            width: 500px;
+        }
+
+        #main-image {
+            width: 500px;
+        }
+
+        #title {
+            font-size: 24px;
+            width: 300px;
+            margin: auto;
+        }
+
+        #description {
+            font-size: 16px;
+            width: 400px;
+            margin: auto;
+        }
+
+        #survey-form {
+            font-size: 16px;
+        }
+
+        .text-fields {
+            font-size: 14px;
+        }
+
+        .comment-box {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        #form-box {
+            width: 300px;
+        }
+
+        #main-image {
+            width: 300px;
+        }
+
+        #description {
+            font-size: 14px;
+            width: 300px;
+            margin: auto;
+        }
+    }
+</style>
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <img src="https://cdn.shopify.com/s/files/1/0427/4533/1866/products/22449-3.jpg?v=1595146257" id="main-image">
+
+    <h1 id="title">
+        Pocky New Flavor Survey
+    </h1>
+    <p id="description">
+        Please let us know how much you liked "Choco Mint"!
+    </p>
+
+
+    <div id="form-box">
+
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br />
+            <input type="text" id="name" name="name" class="text-fields" placeholder="Enter your name" required><br />
+
+            <label for="email" id="email-label">Email</label><br />
+            <input type="text" id="email" name="email" class="text-fields"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Enter your email (example: pockylover@pockymail.com)" required><br />
+
+            <label for="age" id="number-label">Age (optional)</label><br />
+            <input type="text" id="number" name="age" class="text-fields" min=10 max=99 pattern="[1-9][0-9]"
+                placeholder="Age"><br />
+
+            <label for="location">At which store did you try the new flavor?</label><br />
+            <select id="location" name="location" class="text-fields" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="family mart">Family Mart</option>
+                <option value="lawson">Lawson</option>
+                <option value="seven eleven">Seven Eleven</option>
+                <option value="mini stop">Mini Stop</option>
+                <option value="don quijote">Don Quijote</option>
+            </select><br />
+
+            Would you recommend Choco Mint?<br />
+            <input type="radio" id="yes" name="recommend" value="yes" required>
+            <label for="yes">Yes</label><br />
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label><br />
+            <input type="radio" id="no" name="recommend" value="no">
+            <label for="no">No</label><br />
+            <input type="radio" id="not sure" name="recommend" value="not sure">
+            <label for="not sure">Not Sure</label><br /><br />
+
+            <label for="reason">Why did you decide to try Choco Mint?</label><br />
+            <select id="dropdown" name="reason" class="text-fields" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="snack">I was just looking for a snack</option>
+                <option value="advertisement">I saw it in an advertisement</option>
+                <option value="price">The price was good</option>
+                <option value="brand">The brand was good</option>
+                <option value="convenience">It was convenient</option>
+                <option value="recommended">It was recommended</option>
+                <option value="new flavor">I wanted to try the new flavor</option>
+            </select><br />
+
+            What would you improve about Choco Mint? (check all that apply)<br />
+            <input type="checkbox" id="flavor" name="flavor" value="flavor" required>
+            <label for="flavor">Better flavor</label><br />
+            <input type="checkbox" id="availability" name="availability" value="availability">
+            <label for="availability">Availability at more locations</label><br />
+            <input type="checkbox" id="appearance" name="appearance" value="appearance">
+            <label for="appearance">Better appearance of the snack</label><br />
+            <input type="checkbox" id="packaging" name="packaging" value="packaging">
+            <label for="packaging">Better packaging</label><br />
+            <input type="checkbox" id="quantity" name="quantity" value="quantity">
+            <label for="quantity">Increase how much of the snack is included per box</label><br />
+            <input type="checkbox" id="ingredients" name="ingredients" value="ingredients">
+            <label for="ingredients">More natural ingredients</label><br />
+            <input type="checkbox" id="toppings" name="toppings" value="toppings">
+            <label for="toppings">Add toppings (such as nuts or biscuit crumbles)</label><br />
+            <input type="checkbox" id="info" name="info" value="info">
+            <label for="info">More information about the snack on the box</label><br /><br />
+
+            <label for="comments">Do you have any other suggestions or comments?</label><br />
+            <textarea id="comments" name="comments" class="comment-box"
+                placeholder="Enter your comment here..."></textarea>
+
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
